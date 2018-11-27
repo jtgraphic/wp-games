@@ -21,6 +21,7 @@ class Plugin {
     Utility::$plugin_directory = static::$plugin_directory;
 
     Utility::load_class('providers/steam');
+    Utility::load_class('providers/fanatical');
     Utility::load_class('game');
 
     add_filter('cron_schedules', [Utility::class, 'add_cron_schedules']);
